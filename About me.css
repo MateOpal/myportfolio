@@ -1,0 +1,105 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkgrey;
+}
+/*Top header Menu*/
+.fixedMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+    position: sticky;
+    top: 0;
+}
+/*working on the elements of the Top header Menu*/
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    font-weight: 800;
+    font-size: xx-large;
+    padding: 0.5rem;
+    transition: 2s;
+    user-select: none;
+}
+h1:hover {
+    color: antiquewhite;
+    transition: 2s;
+}
+div a {
+    padding: 0.35rem;
+    text-decoration: none;
+    color: black;
+    transition: 2s;
+}
+div a:hover {
+    color: whitesmoke;
+    transition: 2s;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/*Working on the section part*/
+.textPart {
+    margin:auto 0.75rem;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}
+img {
+    width: 55%;
+    height: 55%;
+}
+/*Working on footer*/
+footer {
+    padding: 1.3rem;
+    background-color: coral;
+    padding-top: 0.9rem;
+}
+footer p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    user-select: none;
+    margin-bottom: 0;
+}
+@media (max-width: 600px) {
+    .fixedMenu {
+        display: block;
+        position: sticky;
+        top: 0;
+        margin-top: -2rem;
+    }
+    figure img {
+        width: 320px;
+        height: 185px;
+    }
+    .handsome {
+        height: 290px;
+        width: 180px;
+    }
+    .textPart {
+        font-size: smaller;
+    }
+    footer {
+        padding: 0.75rem;
+        padding-top: 0rem;
+    }
+}
+@media (max-width: 900px) and (min-width: 602px) {
+    .textPart {
+        font-size: large;
+    }
+}
+@media (min-width: 905px) and (max-width: 1282px) {
+    .textPart {
+        font-size: large;
+    }
+}

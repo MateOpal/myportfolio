@@ -1,0 +1,187 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+body {
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(58, 50, 50);
+}
+/*Top header Menu*/
+.fixedMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+    position: sticky;
+    top: 0;
+}
+/*working on the elements of the Top header Menu*/
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    font-weight: 800;
+    font-size: xx-large;
+    padding: 0.5rem;
+    transition: 2s;
+    user-select: none;
+}
+h1:hover {
+    color: antiquewhite;
+    transition: 2s;
+}
+div a {
+    padding: 0.35rem;
+    text-decoration: none;
+    color: black;
+    transition: 2s;
+}
+div a:hover {
+    color: whitesmoke;
+    transition: 2s;
+}
+/*Working on the look of the first page*/
+.profilePics {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.nameIntro {
+    font-size: x-large;
+    max-width: 800px;
+    margin-left: 2rem;
+}
+b {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+/*Working on the first button*/
+.next a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: chocolate;
+}
+.next a:hover {
+    color: whitesmoke;
+    background: blue 20%;
+}
+.next {
+    justify-self: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+button {
+    background-color: coral;
+    border-style: none;
+    padding: 0;
+}
+/*Working on screen responsiveness*/
+@media (max-width: 600px) {
+    .fixedMenu {
+        display: flex;
+        position: sticky;
+        top: 0;
+        margin-top: -2rem;
+    }
+    .dropbtn {
+        background-color: transparent;
+        color: black;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown-content {
+        position: absolute;
+        background-color: lightgrey;
+        min-width: 100%;
+        display: none;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 4px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:active:hover {
+        background-color: goldenrod;
+    }
+    .dropdown:active:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:active:hover .dropbtn {
+        background-color: grey;
+    }
+    .headerLinks {
+        display: none;
+    }
+    h1 {
+        padding: 0;
+    }
+    .profilePics {
+        display: block;
+        margin-top: 2rem;
+    }
+    b {
+        font-size: 35px;
+    }
+    .nameIntro {
+        font-size: small;
+    }
+    .profilePics img {
+        width: 240px;
+        height: 320px;
+    }
+    .profilePics {
+        justify-items: center;
+    }
+}
+@media (max-width: 900px) and (min-width: 602px) {
+    .dropdown {
+        display: none;
+    }
+    b {
+        font-size: 35px;
+    }
+    p {
+        margin-left: 1rem;
+    }
+    .nameIntro {
+        font-size: 20px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1023px) {
+    .dropdown {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .dropdown {
+        display: none;
+    }
+    b {
+        font-size: 35px;
+    }
+    p {
+        margin-left: 1rem;
+    }
+    a {
+        font-size: larger;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
